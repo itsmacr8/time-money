@@ -1,0 +1,21 @@
+.d-flex {
+    display: flex;
+    align-items: var(--align-items, stretch);
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap{
+    gap: 7px;
+}
+
+.ai-center{
+    --align-items: center;
+}
+
+.center{
+    max-width: 700px;
+    margin-inline: auto;
+}

@@ -142,9 +142,9 @@ class LumpSum {
         renderArea: HTMLElement,
     ) {
         const render = renderArea;
-        render.innerHTML = `<h2>Answer is:</h2>
-                <p class="mb-0">We know,</p>
-                <div class="pl-4">
+        render.innerHTML = `<h2 class="text-center mb-1">Answer is:</h2>
+                <p>We know,</p>
+                <div>
                     ${applyFormula}
                     ${this.baseTemplate(calculation)}
                     ${this.baseTemplate(answer)}
@@ -327,9 +327,9 @@ class Annuity extends LumpSum {
         return `<div class="d-flex ai-center gap">
                         <div>${this.type} =</div>
                         <div class="d-flex gap text-center">
-                            <div class="flex-column">
-                                <span>${annuity}</span>
-                                <span class="bt-1">${annuityDivUI}</span>
+                            <div class="d-flex flex-column">
+                                <span class="bb-1">${annuity}</span>
+                                <span>${annuityDivUI}</span>
                             </div>
                             ${interestRuleUI}</div>
                         </div>

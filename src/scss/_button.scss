@@ -1,7 +1,3 @@
-$btn-bg: #007bff;
-$btn-hover-bg: darken($btn-bg, 10%);
-$btn-text-color: #fff;
-
 .btn {
     border: none;
     cursor: pointer;
@@ -10,11 +6,11 @@ $btn-text-color: #fff;
     transition: background-color 0.3s ease-in-out;
 
     &--submit {
-        background-color: $btn-bg;
-        color: $btn-text-color;
+        background-color: $primary;
+        color: $white;
     }
 
     &:hover {
-        background-color: $btn-hover-bg;
+        background-color: $primary-dark;
     }
 }
