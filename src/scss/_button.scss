@@ -1,0 +1,20 @@
+$btn-bg: #007bff;
+$btn-hover-bg: darken($btn-bg, 10%);
+$btn-text-color: #fff;
+
+.btn {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+
+    &--submit {
+        background-color: $btn-bg;
+        color: $btn-text-color;
+    }
+
+    &:hover {
+        background-color: $btn-hover-bg;
+    }
+}
