@@ -1,6 +1,7 @@
 .d-flex {
     display: flex;
     align-items: var(--align-items, stretch);
+    justify-content: var(--justify-content, stretch);
 }
 
 .flex-column {
@@ -18,4 +19,9 @@
 .center{
     max-width: 700px;
     margin-inline: auto;
+}
+
+.page-layout{
+    display: grid;
+    grid-template-rows: max-content auto max-content;
 }

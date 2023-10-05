@@ -45,8 +45,10 @@ DOM.type?.addEventListener('change', () => {
     ) as HTMLLabelElement;
 
     function changeLabelText() {
-        if (TYPE === 'PV' || TYPE === 'FV') {
-            AMOUNT_LABEL.innerText = 'Enter present value or future value';
+        if (TYPE === 'PV') {
+            AMOUNT_LABEL.innerText = 'Enter future amount';
+        } else if (TYPE === 'FV') {
+            AMOUNT_LABEL.innerText = 'Enter present amount';
         } else {
             AMOUNT_LABEL.innerText = 'Enter annuity amount';
         }
