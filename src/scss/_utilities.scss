@@ -23,3 +23,7 @@
 .bb-1 {
     border-bottom: 1px solid $black;
 }
+
+.bg-color{
+    background: linear-gradient(65deg, $gradient-300, $gradient-400) no-repeat center/cover;
+}
